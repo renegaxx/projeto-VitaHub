@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url(Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(Raleway/Raleway-VariableFont_wght.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.tudo {
+    border-radius: 0 0 25% 25%;
+    background-color: #edffd8;
+}
+header {
+    display: flex;
+    padding-top: 30px;
+    background-color: #edffd8;
+    justify-content: center;
+}
+.bolas1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: white;
+    left: 1120px;
+    border-radius: 100%;
+    top: 140px;
+}
+.bolas2 {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    background-color: white;
+    left: 1220px;
+    border-radius: 100%;
+    top: 160px;
+}
+.bolas3 {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-color: white;
+    left: 1320px;
+    border-radius: 100%;
+    top: 220px;
+}
+.bolas4 {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    background-color: white;
+    left: 1380px;
+    border-radius: 100%;
+    top: 340px;
+}
+header img {
+    width: 110px;
+    margin-left: 60px;
+    margin-top: -30px;
+}
+nav {
+    margin-left: 570px;
+    font-family: 'Lato';
+    display: flex;
+    
+}
+.navegar {
+    padding-top: 8px;
+}
+.navegar a {
+    margin-left: 27px;
+    text-decoration: none;
+    color: rgb(1, 65, 1);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.navegar a:hover {
+    color: #30CB31;
+}
+.pesquisar {
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    border: none;
+    margin-left: 40px;
+}
+.pesquisar::placeholder {
+    padding-left: 10px;
+}
+.fa-solid {
+    font-size: 30px;
+    color: rgb(2, 63, 15);
+    margin-left: 30px;
+}
+/* VIDEO QUE FIZ */
+#video-container {
+    max-width: 840px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+  }
+/* CONTEUDO DO CELULAR E NOTEBOOK */
+#conteudo-celular {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.text-celular h4 {
+    font-family: 'Montserrat';
+    font-size: 38px;
+    width: 570px;
+    height: 130px;
+}
+.text-celular h4 span {
+    color: #6B84F5  ;
+}
+.text-celular p {
+    width: 560px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 20px;
+}
+.img-mockup {
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.img-mockup img {
+    width: 600px;
+}
+#bolas {
+    display: flex;
+}
+.bola-img1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #b4fd60;
+    margin-left: 10px;
+}
+/* IMAGEM DOS MEDICOS */
+#medicos {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.gosto {
+    text-align: center;
+}
+.gosto h3 {
+    font-family: 'Montserrat';
+    font-size: 33px;
+}
+.gosto h3 span {
+    color: #6B84F5;
+}
+.dedicados {
+    color: #30CB31;
+}
+.linha-verde {
+    width: 100%;
+    height: 5px;
+    background-color: #30CB31;
+}
+
+
+#proximo-conteudo-1 {
+    margin-top: 150px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+.bola-img {
+    background-color: white;
+    width: 550px;
+    height: 300px;
+    margin-left: 100px;
+    border-radius: 100%;
+}
+.bola-img img {
+    width: 500px;
+    margin-right: 90px;
+    margin-top: -100px;
+}
+.texto-cima {
+    width: 500px;
+}
+.lado-esquerdo {
+    width: 150px;
+    height: 40px;
+    border: solid 3px #30CB31;
+    border-radius: 50px;
+    background-color: transparent;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(107, 132, 245);
+    margin-left: 70px;
+}
+.lado-direito {
+    width: 150px;
+    height: 40px;
+    border: solid 3px rgb(107, 132, 245);
+    border-radius: 50px;
+    background-color: transparent;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: 600;
+    color: #30CB31;
+    margin-left: 30px;
+}
+.texto-cima h1 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    color: #30CB31;
+}
+.texto-cima span {
+    color: rgb(107, 132, 245);
+}
+.texto-cima p {
+    font-family: 'OpenSans';
+    font-size: 20px;
+}
+#proximo-conteudo-2 {
+    text-align: center;
+    margin-top: 110px;
+}
+#proximo-conteudo-2 h1 {
+    font-family: 'Lato';
+}
+.imgs-parceiros {
+    display: flex;
+    justify-content: center;
+}
+.sepaco {
+    width: 300px;
+    margin-right: 190px;
+    height: 90px;
+    margin-top: 30px;
+}
+.saomarcos {
+    width: 130px;
+    margin-right: 100px;
+}
+.guarulhos {
+    width: 170px;
+    margin-left: 100px;
+}
+
