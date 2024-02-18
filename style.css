@@ -120,7 +120,8 @@ nav {
 }
 /* VIDEO QUE FIZ */
 #video-container {
-    max-width: 840px; /* Ajuste conforme necessário */
+    max-width: 840px;
+    height: auto; /* Ajuste conforme necessário */
     margin: 0 auto;
   }
 /* CONTEUDO DO CELULAR E NOTEBOOK */
@@ -270,3 +271,66 @@ nav {
     margin-left: 100px;
 }
 
+#rodape {
+    background-color: #edffd8;
+    color: #fff;
+    padding: 60px 0;
+    margin-top: 100px;
+    border-radius: 10% 10% 0 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-content img {
+    width: 280px;
+}
+.footer-section h2 {
+    color: #000000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+
+}
+.footer-section {
+    margin-top: 30px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'OpenSans';
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+    color: #30CB31; /* Cor de destaque ao passar o mouse */
+}
+/* Adiciona a classe de animação ao rodapé */
+#rodape.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Define a animação fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

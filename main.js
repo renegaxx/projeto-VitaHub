@@ -1,31 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var content = document.getElementById('conteudo-celular');
+    // Seleciona o elemento do rodapé
+    var footer = document.getElementById('rodape');
 
-    // Anime.js para animações
-    anime({
-        targets: '.text-celular',
-        opacity: [0, 1],
-        translateY: [-20, 0],
-        duration: 1000,
-        easing: 'easeInOutQuad',
-        delay: anime.stagger(200),
-    });
-
-    anime({
-        targets: '.img-mockup img',
-        opacity: [0, 1],
-        translateX: [50, 0],
-        duration: 1000,
-        easing: 'easeInOutQuad',
-        delay: 500,
-    });
-
-    anime({
-        targets: '.bola-img1',
-        translateY: [30, 0],
-        opacity: [0, 1],
-        duration: 800,
-        easing: 'easeInOutQuad',
-        delay: anime.stagger(100),
+    // Adiciona a classe 'fade-in' quando o usuário começar a rolar para baixo
+    window.addEventListener('scroll', function () {
+        if (isScrolledIntoView(footer) && !footer.classList.contains('fade-in')) {
+            footer.classList.add('fade-in');
+        }
     });
 });
+
+// Função para verificar se o elemento está visível na janela de visualização
+function isScrolledIntoView(element) {
+    var rect = element.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    // Aparece se pelo menos 50% do elemento está visível
+    return elemTop < window.innerHeight / 2 && elemBottom >= 0;
+}
